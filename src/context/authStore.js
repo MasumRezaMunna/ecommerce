@@ -13,7 +13,7 @@ const useAuthStore = create(
       login: async (email, password) => {
         set({ isLoading: true });
         try {
-          const res = await api.post('/api/auth/login', { email, password });
+          const res = await api.post('/auth/login', { email, password });
           const { token, data } = res.data;
           set({ user: data.user, token, isAuthenticated: true, isLoading: false });
           api.defaults.headers.common['Authorization'] = `Bearer ${token}`;
@@ -27,7 +27,7 @@ const useAuthStore = create(
       register: async (data) => {
         set({ isLoading: true });
         try {
-          const res = await api.post('/api/auth/register', data);
+          const res = await api.post('/auth/register', data);
           const { token, data: resData } = res.data;
           set({ user: resData.user, token, isAuthenticated: true, isLoading: false });
           api.defaults.headers.common['Authorization'] = `Bearer ${token}`;
