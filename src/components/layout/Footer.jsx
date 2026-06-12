@@ -24,10 +24,10 @@ const footerLinks = {
 };
 
 const socials = [
-  { Icon: Facebook, href: '#', label: 'Facebook' },
-  { Icon: Twitter, href: '#', label: 'Twitter' },
-  { Icon: Instagram, href: '#', label: 'Instagram' },
-  { Icon: Youtube, href: '#', label: 'YouTube' },
+  { Icon: Facebook, href: 'https://www.facebook.com', label: 'Facebook' },
+  { Icon: Twitter, href: 'https://twitter.com', label: 'Twitter' },
+  { Icon: Instagram, href: 'https://www.instagram.com', label: 'Instagram' },
+  { Icon: Youtube, href: 'https://www.youtube.com', label: 'YouTube' },
 ];
 
 export default function Footer() {
