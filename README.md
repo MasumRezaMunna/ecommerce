@@ -6,8 +6,8 @@ A production-ready e-commerce web application built with the MERN stack (MongoDB
 
 ## 🚀 Live Demo
 
-- **Frontend:** https://revenio.vercel.app *(deploy to Vercel)*
-- **Backend API:** https://revenio-api.onrender.com *(deploy to Render)*
+- **Frontend:** [https://revenio.vercel.app *(deploy to Vercel)*](https://revenio-ecommerce.netlify.app/)
+- **Backend API:** ecommerce-server-production-165f.up.railway.app
 
 ---
 
@@ -105,12 +105,12 @@ npm run dev     # Starts on http://localhost:5173
 
 ## 🌐 Deployment
 
-### Frontend → Vercel
+### Frontend → netlify
 ```bash
 cd client
 npm run build
-# Deploy the dist/ folder to Vercel
-# Set VITE_API_URL=https://your-api-url.onrender.com/api
+# Deploy
+# Set VITE_API_URL=https://your-api-url.onrender.com
 ```
 
 ### Backend → Render / Railway
